@@ -23,4 +23,31 @@ header {
   top: 0;
   z-index: 9999;
   scroll-behavior: smooth;
+  background-color: transparent;
+  .container-fluid {
+    background-color: transparent;
+  }
+}
+
+.brand {
+  position: fixed;
+  top: 80%;
+  left: 80%;
+  border-bottom-left-radius: 50px !important;
+  border-top-left-radius: 50px !important;
+  border-bottom-right-radius: 50px !important;
+  border-top-right-radius: 50px !important;
+  background: #000;
+  padding: 1px;
+  padding-right: 10px;
+}
+
+@media (max-width: 400px) {
+  .brand {
+    border-radius: 50%;
+    padding: 0;
+    p {
+      display: none;
+    }
+  }
 }
