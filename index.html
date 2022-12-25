@@ -16,6 +16,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="icon" href="./images/icon.png" />
     <link rel="stylesheet" href="./styles/css/main.css" />
     <title>SMhost.Uz</title>
@@ -113,7 +114,11 @@
         <!-- ALERT -->
         <!-- Scrollable modal START-->
 
-        <div class="alert alert-info alert-dismissible fade show" role="alert">
+        <div
+          class="alert alert-info alert-dismissible fade show"
+          role="alert"
+          data-aos="zoom-out-left"
+        >
           <strong>Привет!</strong> Подпишитесь на наш
           <b
             ><a
@@ -164,7 +169,7 @@
                 aria-label="Slide 3"
               ></button>
             </div>
-            <div class="carousel-inner">
+            <div class="carousel-inner" data-aos="zoom-in-down">
               <div class="carousel-item active">
                 <img src="./images/main1.jpg" class="d-block w-100" alt="..." />
                 <div class="carousel-caption d-none d-md-block">
@@ -218,7 +223,7 @@
         </div>
 
         <!--  -->
-        <div class="card mb-3 w-100">
+        <div class="card mb-3 w-100" data-aos="zoom-in-down">
           <div class="row g-0">
             <div class="col-md-12 text-center">
               <div class="card-body">
@@ -235,7 +240,13 @@
         </div>
       </div>
       <div class="container d-lg-flex gap-lg-5 justify-content-center">
-        <div class="card mb-3" style="max-width: 540px">
+        <div
+          class="card mb-3"
+          style="max-width: 540px"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
           <div class="row g-0">
             <div class="col-md-4">
               <img
@@ -259,7 +270,13 @@
           </div>
         </div>
         <!--  -->
-        <div class="card mb-3" style="max-width: 540px">
+        <div
+          class="card mb-3"
+          style="max-width: 540px"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
           <div class="row g-0">
             <div class="col-md-4">
               <img
@@ -289,7 +306,13 @@
       <h2 class="text-center my-5">Tарифы</h2>
       <div class="container gap-lg-5">
         <div class="cards d-lg-flex justify-content-center">
-          <div class="card mb-3 w-100 border-0" id="ssd100">
+          <div
+            class="card mb-3 w-100 border-0"
+            id="ssd100"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
             <div class="row g-0 gap-6">
               <div class="col-md-5">
                 <img
@@ -317,7 +340,13 @@
             </div>
           </div>
           <!--  -->
-          <div class="card mb-3 w-100 border-0" id="ssd1">
+          <div
+            class="card mb-3 w-100 border-0"
+            id="ssd1"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
             <div class="row g-0 gap-6">
               <div class="col-md-5">
                 <img
@@ -346,7 +375,12 @@
           </div>
         </div>
         <!--  -->
-        <div class="cards d-lg-flex justify-content-center">
+        <div
+          class="cards d-lg-flex justify-content-center"
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
           <div class="card mb-3 w-100 border-0" id="ssd2">
             <div class="row g-0 gap-6">
               <div class="col-md-5">
@@ -375,7 +409,13 @@
             </div>
           </div>
           <!--  -->
-          <div class="card mb-3 w-100 border-0" id="ssd5">
+          <div
+            class="card mb-3 w-100 border-0"
+            id="ssd5"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
             <div class="row g-0 gap-6">
               <div class="col-md-5">
                 <img
@@ -409,7 +449,7 @@
     <section id="payment">
       <h2 class="text-center my-5">Способы Oплаты</h2>
       <div class="container d-lg-flex gap-5">
-        <div class="card w-100">
+        <div class="card w-100" data-aos="zoom-in">
           <img src="./images/clickwallet.png" class="card-img-top" alt="..." />
           <div class="card-body">
             <div class="card-text">
@@ -426,7 +466,7 @@
           </div>
         </div>
         <!--  -->
-        <div class="card w-100">
+        <div class="card w-100" data-aos="zoom-in">
           <img src="./images/qiwiwallet.png" class="card-img-top" alt="..." />
           <div class="card-body">
             <div class="card-text">
@@ -455,7 +495,11 @@
       <p class="text-center my-3 mx-1 fs-5">Центр Поддержки</p>
     </a>
 
-    <section id="contact"></section>
+    <section id="contact">
+      <div class="container">
+        <form action=""></form>
+      </div>
+    </section>
 
     <!-- </div> -->
     <!-- FOOTER START -->
@@ -485,5 +529,9 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
