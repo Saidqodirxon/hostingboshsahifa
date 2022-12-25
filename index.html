@@ -17,12 +17,13 @@
       referrerpolicy="no-referrer"
     />
     <link rel="icon" href="./images/icon.png" />
+    <link rel="stylesheet" href="./styles/css/main.css" />
     <title>SMhost.Uz</title>
   </head>
   <body>
     <!-- Header START -->
     <header>
-      <div class="container">
+      <div class="container-fluid">
         <nav class="navbar navbar-expand-lg bg-light">
           <div class="container-fluid">
             <a class="navbar-brand" href="https://smhost.uz"
@@ -107,11 +108,33 @@
     <!-- MAIN SECTON START -->
     <section id="main" class="my-5">
       <div class="container">
+        <!-- ALERT -->
+        <!-- Scrollable modal START-->
+
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+          <strong>Привет!</strong> Подпишитесь на наш
+          <b
+            ><a
+              class="text-decoration-none text-danger"
+              href="https://t.me/SMhostUz"
+              target="_blank"
+              >Telegram-канал</a
+            ></b
+          >
+          для получения дополнительной информации.
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="alert"
+            aria-label="Close"
+          ></button>
+        </div>
         <div
           id="carouselExampleIndicators"
           class="carousel slide"
           data-bs-ride="true"
         >
+          <!-- ALERT -->
           <div class="carousel-indicators">
             <button
               type="button"
@@ -139,7 +162,7 @@
               <img src="./images/main1.jpg" class="d-block w-100" alt="..." />
             </div>
             <div class="carousel-item">
-              <img src="./images/main2.png" class="d-block w-100" alt="..." />
+              <img src="./images/main2.jpg" class="d-block w-100" alt="..." />
             </div>
             <div class="carousel-item">
               <img src="./images/main3.jpg" class="d-block w-100" alt="..." />
@@ -164,10 +187,77 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
+
+        <!--  -->
+        <div class="card mb-3 w-100">
+          <div class="row g-0">
+            <div class="col-md-12 text-center">
+              <div class="card-body">
+                <h5 class="card-title">Хостинг</h5>
+                <p class="card-text">
+                  Ваш проект будет развиваться дальше вместе с нами.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">25.12.2022</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- MAIN SECTON END -->
-
+    <section class="">
+      <div class="container d-lg-flex gap-lg-5 justify-content-lg-center">
+        <div class="card mb-3" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="./images/card1.png"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Все языки программирования</h5>
+                <p class="card-text">
+                  Возможность поддерживать все языки программирования с одним
+                  планом хостинга!
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">25.12.2022</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="card mb-3" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="./images/card2.png"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Используйте бесплатный хостинг</h5>
+                <p class="card-text">
+                  SMHOST.uz предлагает вам бесплатный хостинг, с помощью
+                  которого вы сможете запустить свой первый проект.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">25.12.2022</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- SCRIPT -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
